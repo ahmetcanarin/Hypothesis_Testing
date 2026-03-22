@@ -15,7 +15,7 @@ There are two separate datasets: **Control Group** and **Test Group**. These dat
 - **Maximum Bidding** was applied to the Control Group  
 - **Average Bidding** was applied to the Test Group  
 
-### Variables
+#### Variables
 
 - **Impression** : Number of ad impressions  
 - **Click** : Number of clicks on displayed ads  
