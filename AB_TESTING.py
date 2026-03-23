@@ -16,8 +16,8 @@ pd.set_option("display.expand_frame_repr", False)
 pd.set_option("display.max_rows", 10)
 pd.set_option("display.float_format", lambda x: "%.5f" % x)
 
-df_control = pd.read_excel("Measurement Problems/Ödev/ab_testing.xlsx", sheet_name="Control Group")
-df_test = pd.read_excel("Measurement Problems/Ödev/ab_testing.xlsx", sheet_name="Test Group")
+df_control = pd.read_excel("ab_testing.xlsx", sheet_name="Control Group")
+df_test = pd.read_excel("ab_testing.xlsx", sheet_name="Test Group")
 
 df_control.describe().T
 df_test.describe().T
