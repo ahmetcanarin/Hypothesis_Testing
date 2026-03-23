@@ -1,23 +1,76 @@
-# Comparison of Bidding Methods Conversion Using A/B Testing
+# 📊 A/B Testing: Comparison of Bidding Methods
 
-## Business Problem
+---
 
-Facebook has recently introduced a new bidding type called **"average bidding"** as an alternative to the existing **"maximum bidding"** method. One of our clients, **bombabomba.com**, has decided to test this new feature and wants to conduct an A/B test to determine whether average bidding generates more conversions than maximum bidding.
+## 🧩 Business Problem
 
-The A/B test has been running for one month, and bombabomba.com now expects you to analyze the results. The ultimate success metric for bombabomba.com is **Purchase**. Therefore, statistical analyses should focus on the **Purchase** metric.
+Facebook has introduced a new bidding strategy called **"average bidding"** as an alternative to the existing **"maximum bidding"** method.
 
-## Dataset Story
+A client, **bombabomba.com**, wants to evaluate whether this new method leads to **higher conversion rates**.
 
-This dataset contains website interaction data of a company, including metrics such as the number of ads users view and click, as well as the revenue generated from these interactions.
+To achieve this:
+- An A/B test has been conducted for **one month**
+- The goal is to determine if there is a **statistically significant difference** between the two bidding methods
 
-There are two separate datasets: **Control Group** and **Test Group**. These datasets are located on different sheets of the `ab_testing.xlsx` file.
+📌 The key success metric is: **Purchase**
 
-- **Maximum Bidding** was applied to the Control Group  
-- **Average Bidding** was applied to the Test Group  
+---
 
-### Variables
+## 📁 Dataset Story
 
-- **Impression** : Number of ad impressions  
-- **Click** : Number of clicks on displayed ads  
-- **Purchase** : Number of products purchased after clicking ads  
-- **Earning** : Revenue generated from purchases  
+The dataset contains **website interaction and performance data**, including user engagement with ads and resulting revenue.
+
+There are two separate groups:
+- **Control Group** → Maximum Bidding  
+- **Test Group** → Average Bidding  
+
+These datasets are stored in different sheets of the `ab_testing.xlsx` file.
+
+---
+
+## 📌 Variables
+
+| Variable | Description |
+|----------|-------------|
+| **Impression** | Number of ad impressions |
+| **Click** | Number of clicks on ads |
+| **Purchase** | Number of purchases after clicks |
+| **Earning** | Revenue generated from purchases |
+
+---
+
+## 🎯 Project Objectives
+
+- Compare **conversion performance** between bidding strategies  
+- Determine whether the difference is **statistically significant**  
+- Support decision-making with **data-driven insights**  
+
+---
+
+## 🛠️ Methodology
+
+- Exploratory data analysis (EDA)  
+- Hypothesis testing:
+  - **H₀ (Null Hypothesis):** No difference between groups  
+  - **H₁ (Alternative Hypothesis):** There is a difference  
+- Assumption checks:
+  - Normality (Shapiro-Wilk Test)  
+  - Homogeneity of variance (Levene Test)  
+- Statistical testing:
+  - Independent two-sample **t-test** (if assumptions hold)  
+  - **Mann-Whitney U test** (if assumptions are violated)  
+
+---
+
+## 📊 Key Insight
+
+- No statistically significant difference was found between the control and test groups based on the **Purchase** metric.  
+- This suggests that **average bidding does not outperform maximum bidding** in terms of conversions.
+
+---
+
+## 🚀 Expected Outcome
+
+- Clear evaluation of bidding strategy performance  
+- Data-backed recommendation for marketing optimization  
+- Improved decision-making for advertising investments  
