@@ -57,8 +57,8 @@ These datasets are stored in different sheets of the `ab_testing.xlsx` file.
   - Normality (Shapiro-Wilk Test)  
   - Homogeneity of variance (Levene Test)  
 - Statistical testing:
-  - Independent two-sample **t-test** (if assumptions hold)  
-  - **Mann-Whitney U test** (if assumptions are violated)  
+  - Independent Two-Sample **T-Test** (if assumptions hold)  
+  - **Mann-Whitney U Test** (if assumptions are violated)  
 
 ---
 
